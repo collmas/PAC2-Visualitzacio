@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.lines import Line2D
 
-df = pd.read_csv("./nba_field_goals_scrap.csv")
+df = pd.read_csv("./data/nba_field_goals_scrap.csv")
 data = df[["FTM", "FG2M", "FG3M"]].values.tolist()
 
 colors = ["#FFFFFF", "#C9082A", "#17408B"]

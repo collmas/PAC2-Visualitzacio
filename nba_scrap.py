@@ -1,5 +1,6 @@
 from nba_api.stats.endpoints import PlayerGameLogs
 import pandas as pd
+import os
 
 # Funció per a reanomenar correctament les columnes calculades
 def rename_columns(df: pd.DataFrame):
@@ -44,4 +45,4 @@ df.sort_values(by="PTS", ascending=False, inplace=True)
 # Escollim els 3 equips més anotadors i els 3 menys anotadors
 df = pd.concat([df.head(5), df.sort_values(by="PTS", ascending=True).head(5)])
 
-df.to_csv("nba_field_goals_scrap.csv")
+df.to_csv("./data/nba_field_goals_scrap.csv")

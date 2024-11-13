@@ -2,7 +2,7 @@ library(ggplot2)
 library(dplyr)
 
 # Carreguem el csv
-df <- read.csv("/Users/collm/Documents/master/GitHub/PAC2-Visualitzacio/muertos_en_accidentes_de_trafico_en_los_ultimos_10_años.csv", sep=";") %>% 
+df <- read.csv("/Users/collm/Documents/master/GitHub/PAC2-Visualitzacio/data/muertos_en_accidentes_de_trafico_en_los_ultimos_10_años.csv", sep=";") %>% 
   filter(Año > 2014)
 
 # Afegim el numèrics per mes i any

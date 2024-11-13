@@ -6,7 +6,7 @@ from matplotlib.offsetbox import (OffsetImage, AnnotationBbox)
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("./gaming_revenue.csv")
+df = pd.read_csv("./data/gaming_revenue.csv")
 df["Percentatges"] = round(df["Ventes"] / sum(df["Ventes"]) * 100, 2)
 
 # Dades de distribució de tipus de feina (exemple)
