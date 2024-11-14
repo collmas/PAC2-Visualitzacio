@@ -61,7 +61,7 @@ for i, (team, counts) in enumerate(zip(df["TEAM_ABBREVIATION"], data)):
     ax.set_xlim(-0.5, row_length * spacing_x)  # límit de l'eix x
     ax.set_ylim(-10 * spacing_y, spacing_y)   # límit de l'eix y, ajustat per al nombre de files
 
-    ax.text(x=2.25, y=-2.15, s=f"{df[df.TEAM_ABBREVIATION == team]['PTS'].values[0]} PTS", horizontalalignment='center',
+    ax.text(x=2.25, y=-2.15, s=f"{df[df.TEAM_ABBREVIATION == team]['PTS'].values[0]} PTS/Partit", horizontalalignment='center',
      verticalalignment='center', fontweight="bold", color=team_colors[team_colors.team_abbreviation == team]["team_color"].values[0])
     
     # Ocultem els eixos
@@ -70,8 +70,8 @@ for i, (team, counts) in enumerate(zip(df["TEAM_ABBREVIATION"], data)):
 # fig.text(0.5, 1.1, "Millors equips NBA", horizontalalignment='center',
     #  verticalalignment='center')
 
-fig.suptitle("Distribució dels tirs dels top 5 en anotació a la NBA 2024-25", y=1.0001, fontsize=16)
-fig.text(0.5, 0.53, "Distribució dels tirs dels bottom 5 en anotació a la NBA 2024-25", horizontalalignment='center',
+fig.suptitle("Distribució dels tirs dels top 5 en anotació mitjana a la NBA 2024-25", y=1.0001, fontsize=16)
+fig.text(0.5, 0.53, "Distribució dels tirs dels bottom 5 en anotació mitjana a la NBA 2024-25", horizontalalignment='center',
      verticalalignment='center', fontsize=16)
 
 
